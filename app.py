@@ -51,7 +51,7 @@ def prediction_genre(feature_values, model, le):
 
 from flask import request
 
-df = read_dataset(Path('Datasets\clustering_hana.csv'))
+df = pd.read_csv(Path('Datasets\clustering_hana.csv'))
 df2 = df[['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'loudness', 'speechiness', 'tempo', 'valence', 'kmeans', 'id']]
 
 rf_song_model = pickle.load(
