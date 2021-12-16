@@ -164,4 +164,4 @@ def index():
   return "<h1>Welcome to Spotify API</h1>"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
